@@ -29,8 +29,8 @@ def test():
 def main():
     test()
     splitted_data = readInputFileAndSplit()
-    print("Day 1 Part 1:", sum(splitted_data, 1)) #1
-    print("Day 1 Part 2:", sum(splitted_data, int((len(splitted_data)) / 2))) #2
+    print("Day 1 Part 1:", sum(splitted_data, 1))
+    print("Day 1 Part 2:", sum(splitted_data, int((len(splitted_data)) / 2)))
 
 
 if __name__ == '__main__':
