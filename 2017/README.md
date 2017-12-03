@@ -7,3 +7,7 @@
 ##### --- [Day 2: Corruption Checksum](d02) ---
 - [x] Part One
 - [x] Part Two
+
+##### --- [Day 3: Spiral Memory](d03) ---
+- [x] Part One
+- [x] Part Two
