@@ -11,3 +11,7 @@
 ##### --- [Day 3: Spiral Memory](d03) ---
 - [x] Part One
 - [x] Part Two
+
+##### --- [Day 4: High-Entropy Passphrases](d04) ---
+- [x] Part One
+- [x] Part Two
