@@ -19,3 +19,7 @@
 ##### --- [Day 5: A Maze of Twisty Trampolines, All Alike](d05) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 6: Memory Reallocation](d06) ---
+- [x] Part 1
+- [x] Part 2
