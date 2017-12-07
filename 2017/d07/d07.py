@@ -27,13 +27,17 @@ class Node:
     name = ''
     parent = None
     children = []
-    node_weight = 0
+    node_weight, node_children_weight = 0, 0
 
-    def __init__(self, name, parent, children, node_weight):
+    def __init__(self, name, parent, children, node_weight, node_children_weight):
         self.name = name
         self.parent = parent
         self.children = frozenset(children)
         self.node_weight = node_weight
+        self.node_children_weight = node_children_weight
+
+    def __str__(self):
+        return self.name + ': nw: ' + str(self.node_weight) + ' ndw: ' + str(self.node_children_weight)
 
 
     def getParent(self):
@@ -58,11 +62,11 @@ def createNode(regex_node_line, with_children):
         name = regex_node_line.group(1)
         children = regex_node_line.group(3).split(', ')
         node_weight = int(regex_node_line.group(2))
-        node = Node(name, None, children, node_weight)
+        node = Node(name, None, children, node_weight, node_weight)
     else:
         name = regex_node_line.group(1)
         node_weight = regex_node_line.group(2)
-        node = Node(name, None, [], node_weight)
+        node = Node(name, None, [], node_weight, node_weight)
     return node
 
 
@@ -89,6 +93,17 @@ def putParentIntoNodes(program_tree):
             child_in_program_tree.parent = tree_element
 
 
+def putWeightsOfChildrenToParent(program_tree):
+    for tree_element in program_tree.keys():
+        children_in_node = program_tree.get(tree_element).children
+        sum_of_weights = program_tree.get(tree_element).node_children_weight
+        for child_name in children_in_node:
+            children_node_weight = program_tree.get(child_name).node_weight
+            sum_of_weights += int(children_node_weight)
+        program_tree.get(tree_element).node_children_weight = sum_of_weights
+        print(program_tree.get(tree_element))
+
+
 def giveMeThisShit(program_tree):
     for tree_element in program_tree.keys():
         if program_tree.get(tree_element).parent is None:
@@ -98,6 +113,7 @@ def giveMeThisShit(program_tree):
 def getBottomProgram(input_data):
     program_tree = createProgramTree(input_data)
     putParentIntoNodes(program_tree)
+    putWeightsOfChildrenToParent(program_tree)
     name_of_bottom_program_node = giveMeThisShit(program_tree)
     return name_of_bottom_program_node
 
@@ -106,9 +122,16 @@ def test():
     assert getBottomProgram(test_input) == 'tknk'
 
 
+def selectInput(is_production):
+    if is_production:
+        return readInputFile()
+    else:
+        return test_input
+
+
 def main():
     test()
-    input_data = readInputFile()
+    input_data = selectInput(False)
     print('Day 7 Part 1:', getBottomProgram(input_data))
 
 
