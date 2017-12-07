@@ -68,17 +68,17 @@ def createNode(regex_node_line, with_children):
 
 
 def createProgramTree(input_data):
-    programTree = defaultdict()
+    program_tree = defaultdict()
     for node_line in input_data:
         if re.match(check_children_pattern, node_line):
             regex_node_line = re.search(node_with_children_pattern, node_line)
             node = createNode(regex_node_line, True)
-            programTree.update({node.name: node})
+            program_tree.update({node.name: node})
         else:
             regex_node_line = re.search(node_without_children_pattern, node_line)
             node = createNode(regex_node_line, False)
-            programTree.update({node.name: node})
-    return programTree
+            program_tree.update({node.name: node})
+    return program_tree
 
 
 def putParentIntoNodes(program_tree):
