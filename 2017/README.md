@@ -23,3 +23,7 @@
 ##### --- [Day 6: Memory Reallocation](d06) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 7: Recursive Circus](d07) ---
+- [x] Part 1
+- [ ] Part 2
