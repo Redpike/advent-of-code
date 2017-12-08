@@ -84,10 +84,21 @@ def putParentIntoNodes(program_tree):
             child_in_program_tree.parent = tree_element
 
 
-#TODO Need refactor!!!!!!!
+def computeWeights(program_tree, current_node, children_weights):
+    good_weight, bad_weight = 0, 0
+    for weight in children_weights:
+        if children_weights.count(weight) == 1:
+            bad_weight = weight
+        else:
+            good_weight = weight
+    substract = abs(good_weight - bad_weight)
+    for child_name in program_tree.get(current_node).children:
+        if program_tree.get(child_name).node_children_weight == bad_weight:
+            global new_balanced_weight
+            new_balanced_weight = program_tree.get(child_name).node_weight - substract
+
+
 def putWeightsOfChildrenToParent(program_tree, current_node):
-    good_weight = 0
-    bad_weight = 0
     children_weights = []
     children = program_tree.get(current_node).children
     for child_name in children:
@@ -100,16 +111,7 @@ def putWeightsOfChildrenToParent(program_tree, current_node):
         if program_tree.get(current_node).parent is not None:
             children_weights.append(weight)
     if len(set(children_weights)) > 1:
-        for weight in children_weights:
-            if children_weights.count(weight) == 1:
-                bad_weight = weight
-            else:
-                good_weight = weight
-        substract = abs(good_weight - bad_weight)
-        for child_name in program_tree.get(current_node).children:
-            if program_tree.get(child_name).node_children_weight == bad_weight:
-                global new_balanced_weight
-                new_balanced_weight = program_tree.get(child_name).node_weight - substract
+        computeWeights(program_tree, current_node, children_weights)
     return children_weights
 
 
@@ -119,6 +121,10 @@ def giveMeThisShit(program_tree):
             return tree_element
 
 
+def computeWeightsForPart2(program_tree, name_of_botton_program_node):
+    putWeightsOfChildrenToParent(program_tree, name_of_botton_program_node)
+
+
 def getBottomProgram(input_data, part):
     program_tree = createProgramTree(input_data)
     putParentIntoNodes(program_tree)
@@ -126,14 +132,12 @@ def getBottomProgram(input_data, part):
     if part == 1:
         return name_of_bottom_program_node
     else:
-        #TODO Move to another method
-        good_weight = putWeightsOfChildrenToParent(program_tree, name_of_bottom_program_node)
-        return good_weight
+        computeWeightsForPart2(program_tree, name_of_bottom_program_node)
+        return new_balanced_weight
 
 
 def test():
     assert getBottomProgram(test_input, 1) == 'tknk'
-    # assert getBottomProgram(test_input, 2) == 60
 
 
 def selectInput(is_production):
@@ -147,7 +151,7 @@ def main():
     test()
     input_data = selectInput(True)
     print('Day 7 Part 1:', getBottomProgram(input_data, 1))
-    print('Day 7 Part 2:', getBottomProgram(input_data, 2), new_balanced_weight)
+    print('Day 7 Part 2:', getBottomProgram(input_data, 2))
 
 
 if __name__ == '__main__':
