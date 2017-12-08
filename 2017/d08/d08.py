@@ -10,6 +10,28 @@ test_input = [
 increment_function = 'inc'
 
 
+class Register:
+    register_name = ''
+    step_funtion = ''
+    ammount = 0
+
+    def __init__(self, register_name, step_function, ammount):
+        self.register_name = register_name
+        self.step_funtion = step_function
+        self.ammount = ammount
+
+
+class Condition:
+    left_side = ''
+    operator = ''
+    right_side = 0
+
+    def __init__(self, left_side, operator, right_side):
+        self.left_side = left_side
+        self.operator = operator
+        self.right_side = right_side
+
+
 def readInputFile():
     input_file = open('input', 'r')
     input_data = []
@@ -19,29 +41,25 @@ def readInputFile():
     return input_data
 
 
-def createCondition(left_side, operator, right_side, registers):
-    left_side = registers[left_side]
-    condition = eval(str(left_side) + operator + str(right_side))
+def createCondition(condition, registers):
+    condition.left_side = registers[condition.left_side]
+    condition = eval(str(condition.left_side) + condition.operator + str(condition.right_side))
     return condition
 
-#TODO Need refactor!!!!!!
+
 def getLargestValueOfRegisters(input_data, part):
     registers = defaultdict(int)
     largest_value = 0
     for line in input_data:
         line = line.strip('\n').split()
-        register = line[0]
-        reg_function = line[1]
-        ammount = int(line[2])
-        left_side = line[4]
-        operator = line[5]
-        right_side = int(line[6])
-        if createCondition(left_side, operator, right_side, registers):
-            if reg_function == increment_function:
-                registers[register] += ammount
+        register = Register(line[0], line[1], int(line[2]))
+        condition = Condition(line[4], line[5], int(line[6]))
+        if createCondition(condition, registers):
+            if register.step_funtion == increment_function:
+                registers[register.register_name] += register.ammount
             else:
-                registers[register] -= ammount
-            largest_value = max(registers[register], largest_value)
+                registers[register.register_name] -= register.ammount
+            largest_value = max(registers[register.register_name], largest_value)
 
     if part == 1:
         return max(registers.values())
