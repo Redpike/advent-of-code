@@ -27,3 +27,7 @@
 ##### --- [Day 7: Recursive Circus](d07) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 8: I Heard You Like Registers](d08) ---
+- [x] Part 1
+- [x] Part 2
