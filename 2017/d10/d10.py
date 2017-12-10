@@ -1,3 +1,6 @@
+test_input_part = [3, 4, 1, 5]
+
+
 def readInputFile(part):
     input_file = open('input', 'r')
     input_data = []
@@ -11,10 +14,10 @@ def readInputFile(part):
     return input_data
 
 
-def createSequence(input_data, times):
+def createSequence(input_data, times, list_size):
     position = 0
     skip = 0
-    sequence = list(range(256))
+    sequence = list(range(list_size))
     for _ in range(times):
         for number in input_data:
             for i in range(number // 2):
@@ -26,8 +29,12 @@ def createSequence(input_data, times):
     return sequence
 
 
+def returnMultiply(sequence):
+    return sequence[0] * sequence[1]
+
+
 def createKnotHash():
-    sequence_part_2 = createSequence(readInputFile(2), 64)
+    sequence_part_2 = createSequence(readInputFile(2), 64, 256)
     hashed_data = ''
     for i in range(len(sequence_part_2) // 16):
         num = 0
@@ -37,9 +44,15 @@ def createKnotHash():
     return hashed_data
 
 
+def test():
+    test_sequence = createSequence(test_input_part, 4, 5)
+    assert returnMultiply(test_sequence) == 12
+
+
 def main():
-    sequence_part_1 = createSequence(readInputFile(1), 1)
-    print('Day 10 Part 1:', sequence_part_1[0] * sequence_part_1[1])
+    test()
+    sequence_part_1 = createSequence(readInputFile(1), 1, 256)
+    print('Day 10 Part 1:', returnMultiply(sequence_part_1))
     print('Day 10 Part 2:', createKnotHash())
 
 
