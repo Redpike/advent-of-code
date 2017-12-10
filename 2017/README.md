@@ -35,3 +35,7 @@
 ##### --- [Day 9: Stream Processing](d09) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 10: Knot Hash](d10) ---
+- [x] Part 1
+- [x] Part 2
