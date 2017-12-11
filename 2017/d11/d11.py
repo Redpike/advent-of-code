@@ -42,7 +42,6 @@ def getDistanceFromStartingPointToLast(input_data):
     for move in input_data:
         point = (point[0] + moves[move][0], point[1] + moves[move][1])
         distances.append(computeDistance(starting_point, point))
-    computeDistance(starting_point, point)
 
 
 def test():
