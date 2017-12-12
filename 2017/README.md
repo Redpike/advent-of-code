@@ -43,3 +43,7 @@
 ##### --- [Day 11: Hex Ed](d11) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 12: Digital Plumber](d12) ---
+- [x] Part 1
+- [x] Part 2
