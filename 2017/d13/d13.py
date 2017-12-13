@@ -56,12 +56,11 @@ def computeDelay(firewall):
 
     return delay
 
-    return delay
-
 
 def test():
     firewall = prepareFirewall(test_input)
     assert computeSeverity(firewall) == 24
+    assert computeDelay(firewall) == 10
 
 
 def selectInput(is_production):
