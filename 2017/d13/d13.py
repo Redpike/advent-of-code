@@ -30,14 +30,33 @@ def computeSeverity(firewall):
     severity = 0
 
     for layer in firewall:
-        if layer % (2 * (firewall.get(layer) - 1)) == 0:
+        steps_to_start_position = 2 * (firewall.get(layer) - 1)
+        if layer % steps_to_start_position == 0:
             severity += (layer * firewall.get(layer))
 
     return severity
 
 
 def computeDelay(firewall):
-    pass
+    delay = 0
+    caught = True
+    while caught:
+        is_scanner_there = False
+        for layer in firewall:
+            picosecond = layer + delay
+            steps_to_start_position = 2 * (firewall.get(layer) - 1)
+            if picosecond % steps_to_start_position == 0:
+                is_scanner_there = True
+                break
+
+        if is_scanner_there:
+            delay += 1
+        else:
+            caught = False
+
+    return delay
+
+    return delay
 
 
 def test():

@@ -50,4 +50,4 @@
 
 ##### --- [Day 13: Packet Scanners](d13) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
