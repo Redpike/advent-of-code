@@ -1,4 +1,5 @@
-test_input_part = [3, 4, 1, 5]
+test_input = [3, 4, 1, 5]
+salt = [17, 31, 73, 47, 23]
 
 
 def readInputFile(part):
@@ -10,11 +11,12 @@ def readInputFile(part):
             input_data = [int(x) for x in input_data]
         else:
             input_data = line.strip()
-            input_data = [ord(x) for x in input_data] + [17, 31, 73, 47, 23]
+            input_data = [ord(x) for x in input_data]
     return input_data
 
 
-def createSequence(input_data, times, list_size):
+def createSequence(input_data, times, list_size, salt_p=[]):
+    input_data += salt_p
     position = 0
     skip = 0
     sequence = list(range(list_size))
@@ -34,7 +36,19 @@ def returnMultiply(sequence):
 
 
 def createKnotHash():
-    sequence_part_2 = createSequence(readInputFile(2), 64, 256)
+    sequence_part_2 = createSequence(readInputFile(2), 64, 256, salt)
+    hashed_data = ''
+    for i in range(len(sequence_part_2) // 16):
+        num = 0
+        for j in range(16):
+            num ^= sequence_part_2[i * 16 + j]
+        hashed_data += hex(num)[2:].zfill(2)
+    return hashed_data
+
+
+def createKnotHashWithInput(input_data):
+    uni_input_data = [ord(x) for x in input_data]
+    sequence_part_2 = createSequence(uni_input_data, 64, 256, salt)
     hashed_data = ''
     for i in range(len(sequence_part_2) // 16):
         num = 0
@@ -45,7 +59,7 @@ def createKnotHash():
 
 
 def test():
-    test_sequence = createSequence(test_input_part, 4, 5)
+    test_sequence = createSequence(test_input, 4, 5)
     assert returnMultiply(test_sequence) == 12
 
 
