@@ -9,6 +9,7 @@ input_data = 'hxtvlmkl'
 test_data = 'flqrgnkx'
 matrix = []
 
+
 def createGrid(input_data_p):
     global matrix
     matrix = []
