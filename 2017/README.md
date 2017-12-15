@@ -55,3 +55,7 @@
 ##### --- [Day 14: Disk Defragmentation](d14) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 15: Dueling Generators](d15) ---
+- [x] Part 1
+- [x] Part 2
