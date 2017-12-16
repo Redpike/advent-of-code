@@ -59,3 +59,7 @@
 ##### --- [Day 15: Dueling Generators](d15) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 16: Permutation Promenade](d16) ---
+- [x] Part 1
+- [x] Part 2
