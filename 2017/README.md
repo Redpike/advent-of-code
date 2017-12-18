@@ -64,6 +64,10 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 17: Spinlock](d16) ---
+##### --- [Day 17: Spinlock](d17) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 18: Duet](d18) ---
+- [x] Part 1
+- [ ] Part 2
