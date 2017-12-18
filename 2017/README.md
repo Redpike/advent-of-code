@@ -70,4 +70,4 @@
 
 ##### --- [Day 18: Duet](d18) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
