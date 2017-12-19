@@ -71,3 +71,7 @@
 ##### --- [Day 18: Duet](d18) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 19: A Series of Tubes](d19) ---
+- [x] Part 1
+- [x] Part 2
