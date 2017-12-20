@@ -1,22 +1,21 @@
 from collections import defaultdict
 
-test_input = [
-    'p=< 3,0,0>, v=< 2,0,0>, a=<-1,0,0>',
-    'p=< 4,0,0>, v=< 0,0,0>, a=<-2,0,0>',
-    'p=< 4,0,0>, v=< 1,0,0>, a=<-1,0,0>',
-    'p=< 2,0,0>, v=<-2,0,0>, a=<-2,0,0>',
-    'p=< 4,0,0>, v=< 0,0,0>, a=<-1,0,0>',
-    'p=<-2,0,0>, v=<-4,0,0>, a=<-2,0,0>',
-    'p=< 3,0,0>, v=<-1,0,0>, a=<-1,0,0>',
-    'p=<-8,0,0>, v=<-6,0,0>, a=<-2,0,0>'
-]
+parts = defaultdict()
 
 
-class Particle:
+class Particle(object):
     def __init__(self, p, v, a):
         self.p = p
         self.v = v
         self.a = a
+
+    def nextStep(self):
+        for i in range(3):
+            self.v[i] += self.a[i]
+            self.p[i] += self.v[i]
+
+    def distance(self):
+        return sum([abs(position) for position in self.p])
 
 
 def readInputFile():
@@ -28,32 +27,63 @@ def readInputFile():
     return input_data
 
 
-def getTokens(tokens_in_line):
-    position_in_line = tokens_in_line[0][3:-2].split(',')
-    velocity_in_line = tokens_in_line[1][3:-2].split(',')
-    acceleration_in_line = tokens_in_line[2][3:-2].split(',')
-    return position_in_line, velocity_in_line, acceleration_in_line
+def parseParticle(line, index):
+    ts = line.strip().split(", ")
+    positions = [int(x) for x in ts[0].split("=")[1][1:-1].split(",")]
+    velocities = [int(x) for x in ts[1].split("=")[1][1:-1].split(",")]
+    accelerations = [int(x) for x in ts[2].split("=")[1][1:-1].split(",")]
+    parts[index] = Particle(positions, velocities, accelerations)
 
 
 def getClosest(input_data):
-    index = 0
-    position = defaultdict(int)
-    velocity = defaultdict(int)
-    acceleration = defaultdict(int)
-    for line in input_data:
-        tokens_in_line = line.split()
-        position_in_line, velocity_in_line, acceleration_in_line = getTokens(tokens_in_line)
+    for index in range(len(input_data)):
+        parseParticle(input_data[index], index)
+    while True:
+        min_d = None
+        min_part = None
+        for i, part in parts.items():
+            part.nextStep()
+            if min_d is None or part.distance() < min_d:
+                min_part = i
+                min_d = part.distance()
+        print(min_part)
 
 
-def test():
-    pass
+def getParticles(input_data):
+    for index in range(len(input_data)):
+        parseParticle(input_data[index], index)
+    while True:
+        min_d = None
+        min_part = None
+        for i, part in parts.items():
+            part.nextStep()
+            if min_d is None or part.distance() < min_d:
+                min_part = i
+                min_d = part.distance()
+
+        if True:
+            pos_dict = defaultdict(list)
+            for i, part in parts.items():
+                k = tuple(part.p)
+                pos_dict[k].append(i)
+
+            for k, v in pos_dict.items():
+                if len(v) > 1:
+                    for i in v:
+                        del parts[i]
+            print(len(parts))
+
+
+def selectPart(input_data, part):
+    if part == 1:
+        print('Day 20 Part 1:', getClosest(input_data))
+    else:
+        print('Day 20 Part 2:', getParticles(input_data))
 
 
 def main():
-    test()
     input_data = readInputFile()
-    print('Day 20 Part 1:', getClosest(input_data))
-    print('Day 20 Part 2:', )
+    selectPart(input_data, 1)
 
 
 if __name__ == '__main__':
