@@ -79,3 +79,7 @@
 ##### --- [Day 20: Particle Swarm](d20) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 21: Fractal Art](d21) ---
+- [x] Part 1
+- [x] Part 2
