@@ -83,3 +83,7 @@
 ##### --- [Day 21: Fractal Art](d21) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 22: Sporifica Virus](d22) ---
+- [ ] Part 1
+- [ ] Part 2
