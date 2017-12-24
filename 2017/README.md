@@ -87,3 +87,7 @@
 ##### --- [Day 22: Sporifica Virus](d22) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 23: Coprocessor Conflagration](d23) ---
+- [x] Part 1
+- [x] Part 2
