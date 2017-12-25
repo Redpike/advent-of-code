@@ -91,3 +91,11 @@
 ##### --- [Day 23: Coprocessor Conflagration](d23) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 24: Electromagnetic Moat](d24) ---
+- [x] Part 1
+- [x] Part 2
+
+##### --- [Day 25: The Halting Problem](d25) ---
+- [ ] Part 1
+- [ ] Part 2

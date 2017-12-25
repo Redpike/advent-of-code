@@ -21,7 +21,7 @@ def solve(part, input_data):
     registers = defaultdict(int)
     registers['a'] = part - 1
     i = 0
-    while i < 11:
+    while i < len(input_data) // 2:
         op, reg, val = input_data[i].split()
         if op == 'set':
             registers[reg] = getValue(registers, val)
