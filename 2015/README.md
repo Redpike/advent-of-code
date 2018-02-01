@@ -1,6 +1,6 @@
 #### Advent of Code 2015
 
-##### --- [Day 1: ](d01) ---
+##### --- [Day 1: Not Quite Lisp](d01) ---
 - [x] Part 1
 - [x] Part 2
 
