@@ -1,8 +1,8 @@
 #### Advent of Code 2015
 
 ##### --- [Day 1: ](d01) ---
-- [ ] Part 1
-- [ ] Part 2
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 2: ](d02) ---
 - [ ] Part 1
