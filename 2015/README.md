@@ -4,9 +4,9 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 2: ](d02) ---
-- [ ] Part 1
-- [ ] Part 2
+##### --- [Day 2: I Was Told There Would Be No Math](d02) ---
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 3: ](d03) ---
 - [ ] Part 1
