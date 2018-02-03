@@ -8,9 +8,9 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 3: ](d03) ---
-- [ ] Part 1
-- [ ] Part 2
+##### --- [Day 3: Perfectly Spherical Houses in a Vacuum](d03) ---
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 4: ](d04) ---
 - [ ] Part 1
