@@ -12,9 +12,9 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 4: ](d04) ---
-- [ ] Part 1
-- [ ] Part 2
+##### --- [Day 4: The Ideal Stocking Stuffer](d04) ---
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 5: ](d05) ---
 - [ ] Part 1
