@@ -16,9 +16,9 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 5: ](d05) ---
-- [ ] Part 1
-- [ ] Part 2
+##### --- [Day 5: Doesn't He Have Intern-Elves For This?](d05) ---
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 6: ](d06) ---
 - [ ] Part 1
