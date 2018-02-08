@@ -6,11 +6,11 @@ operands = {
     "AND": lambda arg: arg(0) & arg(2),
     "OR": lambda arg: arg(0) | arg(2),
     "LSHIFT": lambda arg: arg(0) << arg(2),
-    "RSHIFT": lambda arg: arg(0) >> arg(2),
+    "RSHIFT": lambda arg: arg(0) >> arg(2)
 }
 
 
-class AsesmblySignal:
+class AssemblySignal:
     def __init__(self, operators, commands):
         self._operators = operators
         self._commands = commands
@@ -28,7 +28,7 @@ class AsesmblySignal:
         return value
 
     def replace(self, update):
-        return AsesmblySignal(self._operators, {**self._commands, **update})
+        return AssemblySignal(self._operators, {**self._commands, **update})
 
     def _parse_operator(self, cmd):
         return next((x for x in self._operators if x in cmd), None)
@@ -49,9 +49,9 @@ def parseData(input_data):
 def main():
     input_data = readInputFile()
     parsed_data = parseData(input_data)
-    part1 = AsesmblySignal(operands, parsed_data)
+    part1 = AssemblySignal(operands, parsed_data)
     part2 = part1.replace({'b': str(part1.get('a'))})
-    print('Day 07 Part 1:', part1.get("a"))
+    print('Day 07 Part 1:', part1.get('a'))
     print('Day 07 Part 2:', part2.get('a'))
 
 
