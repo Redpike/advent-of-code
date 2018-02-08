@@ -29,8 +29,8 @@
 - [x] Part 2
 
 ##### --- [Day 8: Matchsticks](d08) ---
-- [ ] Part 1
-- [ ] Part 2
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 9: ](d09) ---
 - [ ] Part 1
