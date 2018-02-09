@@ -32,9 +32,9 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 9: ](d09) ---
-- [ ] Part 1
-- [ ] Part 2
+##### --- [Day 9: All in a Single Night](d09) ---
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 10: ](d10) ---
 - [ ] Part 1
