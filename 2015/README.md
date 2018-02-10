@@ -36,9 +36,9 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 10: ](d10) ---
-- [ ] Part 1
-- [ ] Part 2
+##### --- [Day 10: Elves Look, Elves Say](d10) ---
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 11: ](d11) ---
 - [ ] Part 1
