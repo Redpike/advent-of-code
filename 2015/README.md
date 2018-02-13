@@ -48,9 +48,9 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 13: ](d13) ---
-- [ ] Part 1
-- [ ] Part 2
+##### --- [Day 13: Knights of the Dinner Table](d13) ---
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 14: ](d14) ---
 - [ ] Part 1
