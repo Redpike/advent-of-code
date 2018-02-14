@@ -52,9 +52,9 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 14: ](d14) ---
-- [ ] Part 1
-- [ ] Part 2
+##### --- [Day 14: Reindeer Olympics](d14) ---
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 15: ](d15) ---
 - [ ] Part 1
