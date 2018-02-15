@@ -58,7 +58,7 @@
 
 ##### --- [Day 15: Science for Hungry People](d15) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
 
 ##### --- [Day 16: ](d16) ---
 - [ ] Part 1
