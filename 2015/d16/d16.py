@@ -13,7 +13,7 @@ tape = {
     'perfumes': 1
 }
 
-regex_pattern = r'Sue \d+: ([a-z]+): (\d+), ([a-z]+): (\d+), ([a-z]+): (\d+)'
+regex_pattern = re.compile(r'Sue \d+: ([a-z]+): (\d+), ([a-z]+): (\d+), ([a-z]+): (\d+)')
 
 
 def read_input_file():
@@ -34,16 +34,34 @@ def compare(aunt):
     return all(tape[i] == value for i, value in aunt.items())
 
 
-def get_aunt(input_data):
+def compare2(aunt):
+    for attribute, value in aunt.items():
+        if attribute in ['cats', 'trees']:
+            if tape[attribute] >= value:
+                return False
+        elif attribute in ['pomeranians', 'goldfish']:
+            if tape[attribute] <= value:
+                return False
+        else:
+            if tape[attribute] != value:
+                return False
+    return True
+
+
+def get_aunt(input_data, part):
     aunts = parse_aunt_data(input_data)
-    good_aunts = [i + 1 for i, aunt in enumerate(aunts) if compare(aunt)]
-    return good_aunts[0]
+    if part == 1:
+        good_aunts = [i + 1 for i, aunt in enumerate(aunts) if compare(aunt)]
+        return good_aunts[0]
+    else:
+        good_aunts = [i + 1 for i, aunt in enumerate(aunts) if compare2(aunt)]
+        return good_aunts[0]
 
 
 def main():
     input_data = read_input_file()
-    print('Day 16 Part 1:', get_aunt(input_data))
-    print('Day 16 Part 2:', )
+    print('Day 16 Part 1:', get_aunt(input_data, 1))
+    print('Day 16 Part 2:', get_aunt(input_data, 2))
 
 
 if __name__ == '__main__':
