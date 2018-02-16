@@ -62,7 +62,7 @@
 
 ##### --- [Day 16: Aunt Sue](d16) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
 
 ##### --- [Day 17: ](d17) ---
 - [ ] Part 1
