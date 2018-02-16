@@ -60,9 +60,9 @@ def get_components(input_data):
 
 def compute_total_score(components):
     max_score = 0
-    for coockie in combinations_with_replacement(components, 100):
+    for cookie in combinations_with_replacement(components, 100):
         total_capacity, total_durability, total_flavor, total_texture = 0, 0, 0, 0
-        for component in coockie:
+        for component in cookie:
             total_capacity += component.capacity
             total_durability += component.durability
             total_flavor += component.flavor
