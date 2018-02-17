@@ -66,7 +66,7 @@
 
 ##### --- [Day 17: No Such Thing as Too Much](d17) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
 
 ##### --- [Day 18: ](d18) ---
 - [ ] Part 1
