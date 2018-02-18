@@ -69,7 +69,7 @@
 - [x] Part 2
 
 ##### --- [Day 18: Like a GIF For Your Yard](d18) ---
-- [ ] Part 1
+- [x] Part 1
 - [ ] Part 2
 
 ##### --- [Day 19: ](d19) ---
