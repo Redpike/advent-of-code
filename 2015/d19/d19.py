@@ -5,6 +5,12 @@ test_input = {
     'O': ['HH']
 }
 
+test_input2 = {
+    'e': ['H', 'O'],
+    'H': ['HO', 'OH'],
+    'O': ['HH']
+}
+
 
 def read_input_file():
     return open('input', 'r').read().splitlines()
