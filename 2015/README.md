@@ -73,7 +73,7 @@
 - [x] Part 2
 
 ##### --- [Day 19: Medicine for Rudolph](d19) ---
-- [ ] Part 1
+- [x] Part 1
 - [ ] Part 2
 
 ##### --- [Day 20: ](d20) ---
