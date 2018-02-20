@@ -76,7 +76,7 @@
 - [x] Part 1
 - [ ] Part 2
 
-##### --- [Day 20: ](d20) ---
+##### --- [Day 20: Infinite Elves and Infinite Houses](d20) ---
 - [ ] Part 1
 - [ ] Part 2
 
