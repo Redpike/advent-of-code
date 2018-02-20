@@ -78,7 +78,7 @@
 
 ##### --- [Day 20: Infinite Elves and Infinite Houses](d20) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
 
 ##### --- [Day 21: ](d21) ---
 - [ ] Part 1
