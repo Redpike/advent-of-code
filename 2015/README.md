@@ -80,9 +80,9 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 21: ](d21) ---
-- [ ] Part 1
-- [ ] Part 2
+##### --- [Day 21: RPG Simulator 20XX](d21) ---
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 22: ](d22) ---
 - [ ] Part 1
