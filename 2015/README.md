@@ -84,7 +84,7 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 22: ](d22) ---
+##### --- [Day 22: Wizard Simulator 20XX](d22) ---
 - [ ] Part 1
 - [ ] Part 2
 
