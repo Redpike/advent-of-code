@@ -88,9 +88,9 @@
 - [ ] Part 1
 - [ ] Part 2
 
-##### --- [Day 23: ](d23) ---
-- [ ] Part 1
-- [ ] Part 2
+##### --- [Day 23: Opening the Turing Lock](d23) ---
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 24: ](d24) ---
 - [ ] Part 1
