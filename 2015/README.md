@@ -92,9 +92,9 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 24: ](d24) ---
-- [ ] Part 1
-- [ ] Part 2
+##### --- [Day 24: It Hangs in the Balance](d24) ---
+- [x] Part 1
+- [x] Part 2
 
 ##### --- [Day 25: ](d25) ---
 - [ ] Part 1
