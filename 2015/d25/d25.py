@@ -5,13 +5,13 @@ first_code = 20151125
 
 def generate_index(_input: tuple):
     triangle = (_input[0] + _input[1] - 1) * (_input[0] + _input[1]) / 2
-    return triangle - _input[0] + 1
+    return triangle - _input[0]
 
 
 def generate_code(_input: tuple):
     code = first_code
-    target_index = generate_index(_input)
-    for i in range(1, int(target_index)):
+    target_index = int(generate_index(_input))
+    for i in range(target_index):
         code = (code * 252533) % 33554393
     return code
 
