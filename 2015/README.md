@@ -98,4 +98,4 @@
 
 ##### --- [Day 25: Let It Snow](d25) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
