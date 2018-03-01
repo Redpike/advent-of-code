@@ -49,6 +49,13 @@ def set_new_direction(direction, turn):
     return direction
 
 
+# Manhattan distance
+def compute_distance(start_point_x, start_point_y, end_point_x, end_point_y):
+    x_diff = abs(end_point_x - start_point_x)
+    y_diff = abs(end_point_y - start_point_y)
+    return x_diff + y_diff
+
+
 def compute_blocks_away(input_data):
     position = (0, 0)
     direction = 'N'
@@ -62,10 +69,8 @@ def compute_blocks_away(input_data):
         dy = number * int(directions[direction][1]) if directions[direction][1] != 0 else 0
         position = (position[0] + dx, position[1] + dy)
         positions_list.append(position)
-    # Manhattan distance
-    x_diff = abs(positions_list[-1][0] - positions_list[0][0])
-    y_diff = abs(positions_list[-1][1] - positions_list[0][1])
-    return x_diff + y_diff
+    distance = compute_distance(positions_list[0][0], positions_list[0][1], positions_list[-1][0], positions_list[-1][1])
+    return distance
 
 
 def compute_blocks_away_part_2(input_data):
@@ -82,10 +87,8 @@ def compute_blocks_away_part_2(input_data):
             if position not in positions_list:
                 positions_list.append(position)
             else:
-                # Manhattan distance
-                x_diff = abs(position[0] - positions_list[0][0])
-                y_diff = abs(position[1] - positions_list[0][1])
-                return x_diff + y_diff
+                distance = compute_distance(positions_list[0][0], positions_list[0][1], position[0], position[1])
+                return distance
 
 
 def test():
