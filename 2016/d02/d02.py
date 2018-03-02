@@ -28,13 +28,6 @@ def read_input_file():
     return open('input', 'r').read().splitlines()
 
 
-def choose_keypad(part):
-    if part == 1:
-        return keypad_part_1
-    else:
-        return keypad_part_2
-
-
 def get_digit_from_instruction(keypad: list, instruction: str, position_x: int, position_y: int):
     for move in instruction:
         if move == 'U' and keypad[position_y - 1][position_x] != ' ':
