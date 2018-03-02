@@ -4,6 +4,6 @@
 - [x] Part 1
 - [x] Part 2
 
-##### --- [Day 1: Bathroom Security](d02) ---
-- [ ] Part 1
+##### --- [Day 2: Bathroom Security](d02) ---
+- [x] Part 1
 - [ ] Part 2
