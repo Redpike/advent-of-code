@@ -45,6 +45,7 @@ def main():
     test()
     input_data = read_input_file()
     print('Day 03 Part 1:', get_possible_triangles(input_data))
+    input_data = read_input_file()
     input_data = transpose_input_data(input_data)
     print('Day 03 Part 2:', get_possible_triangles(input_data))
 

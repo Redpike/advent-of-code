@@ -10,4 +10,4 @@
 
 ##### --- [Day 3: Squares With Three Sides](d03) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
