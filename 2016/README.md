@@ -11,3 +11,7 @@
 ##### --- [Day 3: Squares With Three Sides](d03) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 4: Security Through Obscurity](d04) ---
+- [x] Part 1
+- [x] Part 2
