@@ -15,3 +15,7 @@
 ##### --- [Day 4: Security Through Obscurity](d04) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 5: How About a Nice Game of Chess?](d05) ---
+- [ ] Part 1
+- [ ] Part 2
