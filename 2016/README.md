@@ -22,4 +22,4 @@
 
 ##### --- [Day 6: Signals and Noise](d06) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2

@@ -35,14 +35,27 @@ def get_error_message(input_data: list):
     return error_message
 
 
+def get_original_message(input_data: list):
+    transposed_data = list(zip(*input_data))
+    error_message = ''
+    for text in transposed_data:
+        ranking_dict = defaultdict(str)
+        for char in text:
+            ranking_dict[char] = text.count(char)
+        error_message += min(ranking_dict.keys(), key=lambda k: ranking_dict[k])
+    return error_message
+
+
 def test():
     assert get_error_message(test_input) == 'easter'
+    assert get_original_message(test_input) == 'advent'
 
 
 def main():
     test()
     input_data = read_input_file()
     print('Day 06 Part 1:', get_error_message(input_data))
+    print('Day 06 Part 2:', get_original_message(input_data))
 
 
 if __name__ == '__main__':
