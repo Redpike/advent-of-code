@@ -26,4 +26,4 @@
 
 ##### --- [Day 7: Internet Protocol Version 7](d07) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
