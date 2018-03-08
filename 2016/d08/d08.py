@@ -33,7 +33,7 @@ def get_structure(input_data):
 def print_text(structure):
     for row in structure:
         for column in row:
-            print(".#"[int(column)], end='')
+            print('.#'[int(column)], end='')
         print()
     print()
 
