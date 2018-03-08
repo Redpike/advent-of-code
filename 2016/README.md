@@ -27,3 +27,7 @@
 ##### --- [Day 7: Internet Protocol Version 7](d07) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 8: Two-Factor Authentication](d08) ---
+- [x] Part 1
+- [x] Part 2
