@@ -9,6 +9,13 @@ test_input = [
     'X(8x2)(3x3)ABCY'
 ]
 
+test_input2 = [
+    '(3x3)XYZ',
+    'X(8x2)(3x3)ABCY',
+    '(27x12)(20x12)(13x14)(7x10)(1x12)A',
+    '(25x3)(3x3)ABC(2x3)XY(5x2)PQRSTX(18x9)(3x2)TWO(5x7)SEVEN'
+]
+
 regex_pattern = r'\((\d+)x(\d+)\)'
 
 
@@ -16,7 +23,7 @@ def read_input_file():
     return open('input', 'r').readline()
 
 
-def decompresse_text(compressed_text: str):
+def decompress_text(compressed_text: str):
     decompressed_text = ''
     marker = 0
 
@@ -38,19 +45,42 @@ def decompresse_text(compressed_text: str):
     return len(decompressed_text)
 
 
+def decompress_text_2(compressed_text: str):
+    regex_search = re.search(regex_pattern, compressed_text)
+    if regex_search:
+        sequence_length = int(regex_search.group(1))
+        multiplier = int(regex_search.group(2))
+        start_marker = regex_search.start()
+        end_marker = regex_search.end()
+
+        inside_marker_part = compressed_text[end_marker:end_marker + sequence_length]
+        outside_marker_part = compressed_text[end_marker + sequence_length:]
+
+        length_of_text = start_marker + (decompress_text_2(inside_marker_part) * multiplier) \
+                         + decompress_text_2(outside_marker_part)
+        return length_of_text
+    else:
+        return len(compressed_text)
+
+
 def test():
-    assert decompresse_text(test_input[0]) == 6
-    assert decompresse_text(test_input[1]) == 7
-    assert decompresse_text(test_input[2]) == 9
-    assert decompresse_text(test_input[3]) == 11
-    assert decompresse_text(test_input[4]) == 6
-    assert decompresse_text(test_input[5]) == 18
+    assert decompress_text(test_input[0]) == 6
+    assert decompress_text(test_input[1]) == 7
+    assert decompress_text(test_input[2]) == 9
+    assert decompress_text(test_input[3]) == 11
+    assert decompress_text(test_input[4]) == 6
+    assert decompress_text(test_input[5]) == 18
+    assert decompress_text_2(test_input2[0]) == 9
+    assert decompress_text_2(test_input2[1]) == 20
+    assert decompress_text_2(test_input2[2]) == 241920
+    assert decompress_text_2(test_input2[3]) == 445
 
 
 def main():
     test()
     input_data = read_input_file()
-    print('Day 09 Part 1:', decompresse_text(input_data))
+    print('Day 09 Part 1:', decompress_text(input_data))
+    print('Day 09 Part 2:', decompress_text_2(input_data))
 
 
 if __name__ == '__main__':
