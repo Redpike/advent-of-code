@@ -31,3 +31,7 @@
 ##### --- [Day 8: Two-Factor Authentication](d08) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 9: Explosives in Cyberspace](d09) ---
+- [x] Part 1
+- [ ] Part 2
