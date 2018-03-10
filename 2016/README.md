@@ -35,3 +35,7 @@
 ##### --- [Day 9: Explosives in Cyberspace](d09) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 10: Balance Bots](d10) ---
+- [x] Part 1
+- [x] Part 2
