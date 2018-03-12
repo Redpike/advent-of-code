@@ -39,3 +39,11 @@
 ##### --- [Day 10: Balance Bots](d10) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 11: Radioisotope Thermoelectric Generators](d11) ---
+- [ ] Part 1
+- [ ] Part 2
+
+##### --- [Day 12: Leonardo's Monorail](d12) ---
+- [ ] Part 1
+- [ ] Part 2
