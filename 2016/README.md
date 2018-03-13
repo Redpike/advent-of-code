@@ -50,4 +50,4 @@
 
 ##### --- [Day 13: A Maze of Twisty Little Cubicles](d13) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
