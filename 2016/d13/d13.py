@@ -12,7 +12,7 @@ def get_possible_moves(old_x: int, old_y: int):
     return possible_moves
 
 
-# A* algorithm
+# BFS Algorithm
 def search_path(part: int):
     traversed = {(1, 1)}
     steps = 0
