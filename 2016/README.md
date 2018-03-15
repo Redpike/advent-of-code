@@ -58,4 +58,4 @@
 
 ##### --- [Day 15: Timing is Everything](d15) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
