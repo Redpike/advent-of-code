@@ -59,3 +59,7 @@
 ##### --- [Day 15: Timing is Everything](d15) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 16: Dragon Checksum](d16) ---
+- [x] Part 1
+- [ ] Part 2
