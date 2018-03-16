@@ -7,7 +7,7 @@ def next_string(string: str):
     return '{}0{}'.format(string, b)
 
 
-def gen(start_string: str, length: int):
+def generate(start_string: str, length: int):
     while len(start_string) < length:
         start_string = next_string(start_string)
     return start_string[:length]
@@ -27,12 +27,13 @@ def checksum(string: str):
 
 
 def test():
-    assert checksum(gen(test_input, 20)) == '01100'
+    assert checksum(generate(test_input, 20)) == '01100'
 
 
 def main():
     test()
-    print('Day 16 Part 1:', checksum(gen(input_data, 272)))
+    print('Day 16 Part 1:', checksum(generate(input_data, 272)))
+    print('Day 16 Part 2:', checksum(generate(input_data, 35651584)))
 
 
 if __name__ == '__main__':

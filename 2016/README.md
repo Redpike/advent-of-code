@@ -62,4 +62,4 @@
 
 ##### --- [Day 16: Dragon Checksum](d16) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
