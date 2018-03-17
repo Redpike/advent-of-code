@@ -37,20 +37,27 @@ def bfs(_input: str, start: tuple, goal: tuple):
                 queue.append((next_move, path + [next_move], dirs + [direction]))
 
 
-def get_shortest_path(_input: str):
+def get_shortest_path(_input: str, part: int):
     paths = list(bfs(_input, (0, 0), (3, 3)))
-    return ''.join(paths[0])
+    if part == 1:
+        return ''.join(paths[0])
+    elif part == 2:
+        return len(paths[-1])
 
 
 def test():
-    assert get_shortest_path(test_input[0]) == 'DDRRRD'
-    assert get_shortest_path(test_input[1]) == 'DDUDRLRRUDRD'
-    assert get_shortest_path(test_input[2]) == 'DRURDRUDDLLDLUURRDULRLDUUDDDRR'
+    assert get_shortest_path(test_input[0], part=1) == 'DDRRRD'
+    assert get_shortest_path(test_input[1], part=1) == 'DDUDRLRRUDRD'
+    assert get_shortest_path(test_input[2], part=1) == 'DRURDRUDDLLDLUURRDULRLDUUDDDRR'
+    assert get_shortest_path(test_input[0], part=2) == 370
+    assert get_shortest_path(test_input[1], part=2) == 492
+    assert get_shortest_path(test_input[2], part=2) == 830
 
 
 def main():
     test()
-    print('Day 17 Part 1:', get_shortest_path(input_data))
+    print('Day 17 Part 1:', get_shortest_path(input_data, part=1))
+    print('Day 17 Part 2:', get_shortest_path(input_data, part=2))
 
 
 if __name__ == '__main__':

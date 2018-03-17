@@ -66,4 +66,4 @@
 
 ##### --- [Day 17: Two Steps Forward](d17) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
