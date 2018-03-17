@@ -17,7 +17,7 @@ moves = {
 }
 
 
-def doors(_input:str, path: list):
+def doors(_input: str, path: list):
     string = (_input + ''.join(path)).encode()
     return (int(x, 16) > 10 for x in md5(string).hexdigest()[:4])
 
