@@ -33,6 +33,7 @@ def main():
     test()
     input_data = read_input_file()
     print('Day 18 Part 1:', get_safe_tiles(input_data, 40))
+    print('Day 18 Part 2:', get_safe_tiles(input_data, 400_000))
 
 
 if __name__ == '__main__':

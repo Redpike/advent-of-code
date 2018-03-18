@@ -70,4 +70,4 @@
 
 ##### --- [Day 18: Like a Rogue](d18) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
