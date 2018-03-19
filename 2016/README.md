@@ -71,3 +71,7 @@
 ##### --- [Day 18: Like a Rogue](d18) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 19: An Elephant Named Joseph](d19) ---
+- [x] Part 1
+- [x] Part 2
