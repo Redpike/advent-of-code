@@ -77,5 +77,5 @@
 - [x] Part 2
 
 ##### --- [Day 20: Firewall Rules](d20) ---
-- [ ] Part 1
-- [ ] Part 2
+- [x] Part 1
+- [x] Part 2
