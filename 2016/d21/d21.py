@@ -1,5 +1,8 @@
+from itertools import permutations
+
 test_string = 'abcde'
 input_string = 'abcdefgh'
+password = 'fbgdceah'
 test_input = [
     'swap position 4 with position 0',
     'swap letter d with letter b',
@@ -62,6 +65,12 @@ def scrabble(instructions: list, string: str):
     return ''.join(string)
 
 
+def inverse_scrabble(instructions: list, target: str):
+    for perm in permutations(target):
+        if scrabble(instructions, perm) == target:
+            return ''.join(perm)
+
+
 def test():
     assert scrabble(test_input, test_string) == 'decab'
 
@@ -70,6 +79,9 @@ def main():
     test()
     input_data = read_input_file()
     print('Day 21 Part 1:', scrabble(input_data, input_string))
+    pre_scrabbled_string = inverse_scrabble(input_data, password)
+    print('Day 22 Part 2:', pre_scrabbled_string)
+    assert scrabble(input_data, pre_scrabbled_string) == password
 
 
 if __name__ == '__main__':

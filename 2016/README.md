@@ -82,4 +82,4 @@
 
 ##### --- [Day 21: Scrambled Letters and Hash](d21) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
