@@ -79,3 +79,7 @@
 ##### --- [Day 20: Firewall Rules](d20) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 21: Scrambled Letters and Hash](d21) ---
+- [ ] Part 1
+- [ ] Part 2
