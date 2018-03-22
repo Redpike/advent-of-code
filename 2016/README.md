@@ -86,4 +86,4 @@
 
 ##### --- [Day 22: Grid Computing](d22) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
