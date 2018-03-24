@@ -95,3 +95,7 @@
 ##### --- [Day 24: Air Duct Spelunking](d24) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 25: Clock Signal](d25) ---
+- [x] Part 1
+- [ ] Part 2
