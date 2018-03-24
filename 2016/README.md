@@ -91,3 +91,7 @@
 ##### --- [Day 23: Safe Cracking](d23) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 24: Air Duct Spelunking](d24) ---
+- [x] Part 1
+- [x] Part 2
