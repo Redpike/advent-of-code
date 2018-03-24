@@ -87,3 +87,7 @@
 ##### --- [Day 22: Grid Computing](d22) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 23: Safe Cracking](d23) ---
+- [x] Part 1
+- [x] Part 2
