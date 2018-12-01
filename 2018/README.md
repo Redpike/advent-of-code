@@ -2,4 +2,4 @@
 
 ##### --- [Day 1: Chronal Calibration](d01) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
