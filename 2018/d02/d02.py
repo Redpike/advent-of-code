@@ -1,3 +1,5 @@
+from collections import Counter
+
 test_input = [
     'abcdef',
     'bababc',
@@ -14,11 +16,18 @@ def read_input():
 
 
 def get_checksum(_input: list):
-    pass
+    counter_two, counter_three = 0, 0
+    for line in _input:
+        chars_dict = Counter(line)
+        if 2 in chars_dict.values():
+            counter_two += 1
+        if 3 in chars_dict.values():
+            counter_three += 1
+    return counter_two * counter_three
 
 
 def test():
-    pass
+    assert get_checksum(test_input) == 12
 
 
 def main():
