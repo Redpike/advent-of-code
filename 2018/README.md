@@ -6,4 +6,4 @@
 
 ##### --- [Day 2: Inventory Management System](d02) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
