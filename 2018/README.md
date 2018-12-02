@@ -3,3 +3,7 @@
 ##### --- [Day 1: Chronal Calibration](d01) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 2: Inventory Management System](d02) ---
+- [ ] Part 1
+- [ ] Part 2
