@@ -11,3 +11,7 @@
 ##### --- [Day 3: No Matter How You Slice It](d03) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 4: Repose Record](d04) ---
+- [ ] Part 1
+- [ ] Part 2
