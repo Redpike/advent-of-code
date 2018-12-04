@@ -14,4 +14,4 @@
 
 ##### --- [Day 4: Repose Record](d04) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2

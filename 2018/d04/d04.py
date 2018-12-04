@@ -31,9 +31,9 @@ def parse_time(line: str):
     return int(time.split(':')[1])
 
 
-def get_id_of_guard(_input: list):
+def get_multiply_part_1(_input: list):
     guard, asleep = None, None
-    C, CM = defaultdict(int), defaultdict(lambda: defaultdict(int))
+    guards, guards_with_time = defaultdict(int), defaultdict(lambda: defaultdict(int))
     for line in _input:
         time = parse_time(line)
         if 'begins shift' in line:
@@ -43,8 +43,8 @@ def get_id_of_guard(_input: list):
             asleep = time
         elif 'wakes up' in line:
             for t in range(asleep, time):
-                CM[guard][t] += 1
-                C[guard] += 1
+                guards_with_time[guard][t] += 1
+                guards[guard] += 1
 
     def arg_max(d: defaultdict):
         best = None
@@ -53,20 +53,48 @@ def get_id_of_guard(_input: list):
                 best = k
         return best
 
-    best_guard = arg_max(C)
-    best_min = arg_max(CM[best_guard])
+    best_guard = arg_max(guards)
+    best_min = arg_max(guards_with_time[best_guard])
+    return best_guard * best_min
+
+
+def get_multiply_part_2(_input: list):
+    guard, asleep = None, None
+    guards, guards_with_time = defaultdict(int), defaultdict(int)
+    for line in _input:
+        time = parse_time(line)
+        if 'begins shift' in line:
+            guard = int(line.split()[3][1:])
+            asleep = None
+        elif 'falls asleep' in line:
+            asleep = time
+        elif 'wakes up' in line:
+            for t in range(asleep, time):
+                guards_with_time[(guard, t)] += 1
+                guards[guard] += 1
+
+    def arg_max(d: defaultdict):
+        best = None
+        for k, v in d.items():
+            if best is None or v > d[best]:
+                best = k
+        return best
+
+    best_guard, best_min = arg_max(guards_with_time)
     return best_guard * best_min
 
 
 def test():
-    assert get_id_of_guard(test_input) == 240
+    assert get_multiply_part_1(test_input) == 240
+    assert get_multiply_part_2(test_input) == 4455
 
 
 def main():
     test()
     _input = read_input()
     _input.sort()
-    print('Day 04 Part 1:', get_id_of_guard(_input))
+    print('Day 04 Part 1:', get_multiply_part_1(_input))
+    print('Day 04 Part 2:', get_multiply_part_2(_input))
 
 
 if __name__ == '__main__':
