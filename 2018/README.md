@@ -17,5 +17,5 @@
 - [x] Part 2
 
 ##### --- [Day 5: Alchemical Reduction](d05) ---
-- [ ] Part 1
+- [x] Part 1
 - [ ] Part 2
