@@ -19,3 +19,7 @@
 ##### --- [Day 5: Alchemical Reduction](d05) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 6: Chronal Coordinates](d06) ---
+- [x] Part 1
+- [x] Part 2
