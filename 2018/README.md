@@ -26,4 +26,4 @@
 
 ##### --- [Day 7: The Sum of Its Parts](d07) ---
 - [x] Part 1
-- [ ] Part 2
+- [x] Part 2
