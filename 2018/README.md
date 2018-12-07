@@ -23,3 +23,7 @@
 ##### --- [Day 6: Chronal Coordinates](d06) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 7: The Sum of Its Parts](d07) ---
+- [ ] Part 1
+- [ ] Part 2
