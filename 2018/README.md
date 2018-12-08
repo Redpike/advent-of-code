@@ -27,3 +27,7 @@
 ##### --- [Day 7: The Sum of Its Parts](d07) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 8: Memory Maneuver](d08) ---
+- [x] Part 1
+- [x] Part 2
