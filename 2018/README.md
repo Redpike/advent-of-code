@@ -35,3 +35,7 @@
 ##### --- [Day 9: Marble Mania](d09) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 10: The Stars Align](d10) ---
+- [x] Part 1
+- [x] Part 2
