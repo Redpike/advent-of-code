@@ -39,3 +39,7 @@
 ##### --- [Day 10: The Stars Align](d10) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 11: Chronal Charge](d11) ---
+- [x] Part 1
+- [x] Part 2
