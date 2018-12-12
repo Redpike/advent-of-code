@@ -43,3 +43,7 @@
 ##### --- [Day 11: Chronal Charge](d11) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 12: Subterranean Sustainability](d12) ---
+- [x] Part 1
+- [x] Part 2
