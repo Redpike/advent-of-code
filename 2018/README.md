@@ -47,3 +47,7 @@
 ##### --- [Day 12: Subterranean Sustainability](d12) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 13: Mine Cart Madness](d13) ---
+- [x] Part 1
+- [x] Part 2
