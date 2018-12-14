@@ -51,3 +51,7 @@
 ##### --- [Day 13: Mine Cart Madness](d13) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 14: Chocolate Charts](d14) ---
+- [x] Part 1
+- [x] Part 2
