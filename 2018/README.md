@@ -55,3 +55,7 @@
 ##### --- [Day 14: Chocolate Charts](d14) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 15: Beverage Bandits](d15) ---
+- [x] Part 1
+- [x] Part 2
