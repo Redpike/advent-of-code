@@ -59,3 +59,7 @@
 ##### --- [Day 15: Beverage Bandits](d15) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 16: Chronal Classification](d16) ---
+- [x] Part 1
+- [x] Part 2
