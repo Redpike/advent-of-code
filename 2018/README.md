@@ -63,3 +63,7 @@
 ##### --- [Day 16: Chronal Classification](d16) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 17: Reservoir Research](d17) ---
+- [x] Part 1
+- [x] Part 2
