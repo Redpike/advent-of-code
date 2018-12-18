@@ -67,3 +67,7 @@
 ##### --- [Day 17: Reservoir Research](d17) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 18: Settlers of The North Pole](d18) ---
+- [x] Part 1
+- [x] Part 2
