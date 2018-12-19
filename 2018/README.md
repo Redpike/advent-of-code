@@ -71,3 +71,7 @@
 ##### --- [Day 18: Settlers of The North Pole](d18) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 19: Go With The Flow](d19) ---
+- [x] Part 1
+- [x] Part 2
