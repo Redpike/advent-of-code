@@ -79,3 +79,7 @@
 ##### --- [Day 20: A Regular Map](d20) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 21: Chronal Conversion](d21) ---
+- [x] Part 1
+- [x] Part 2
