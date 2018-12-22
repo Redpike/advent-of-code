@@ -83,3 +83,7 @@
 ##### --- [Day 21: Chronal Conversion](d21) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 22: Mode Maze](d22) ---
+- [x] Part 1
+- [x] Part 2
