@@ -87,3 +87,7 @@
 ##### --- [Day 22: Mode Maze](d22) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 23: Experimental Emergency Teleportation](d23) ---
+- [x] Part 1
+- [x] Part 2
