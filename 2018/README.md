@@ -91,3 +91,7 @@
 ##### --- [Day 23: Experimental Emergency Teleportation](d23) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 24: Immune System Simulator 20XX](d24) ---
+- [x] Part 1
+- [x] Part 2
