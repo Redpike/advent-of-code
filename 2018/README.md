@@ -95,3 +95,7 @@
 ##### --- [Day 24: Immune System Simulator 20XX](d24) ---
 - [x] Part 1
 - [x] Part 2
+
+##### --- [Day 25: Four-Dimensional Adventure](d25) ---
+- [x] Part 1
+- [x] Part 2
